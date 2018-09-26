@@ -15,7 +15,7 @@ print("StackVsHeap.py")
 
 try :
     assert f(123) == 123
-except RuntimeError :
+except :
     assert False
 
 try :
