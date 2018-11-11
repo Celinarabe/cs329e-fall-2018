@@ -22,19 +22,19 @@
 \quit
 
 /*
-% psql -Version
+c:\> psql -Version
 psql (PostgreSQL) 9.5.15
 %
 
 
 
-% psql -U postgres --quiet
+c:\> psql -U postgres --quiet
 Password for user postgres:
 postgres=# \quit
 %
 
 
-% psql -U postgres --quiet -H -f ShowDatabases.sql > ShowDatabases.html
+c:\> psql -U postgres --quiet -H -f ShowDatabases.sql > ShowDatabases.html
 Password for user postgres:
 % 
 */

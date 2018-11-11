@@ -1,10 +1,12 @@
 -- ----------
 -- Create.sql
 -- ----------
+-- https://www.postgresql.org/docs/10/tutorial-table.html
 
 \c test;
 
 -- ------------------------------------------------------------------------
+-- To suppress NOTICE messages
 SET client_min_messages=warning;
 drop table if exists Student;
 drop table if exists Apply;
