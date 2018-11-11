@@ -2,7 +2,7 @@
 -- Subqueries.sql
 -- --------------
 
-\c test
+\c test;
 
 -- -----------------------------------------------------------------------
 SET client_min_messages=warning;
@@ -191,11 +191,12 @@ select cName, state
 select cName, state
     from College
     natural join
-        select State
+        (select State
             from College
             group by State
-            having count(State) > 1;
+            having count(State) > 1) as T;
 
+			
 -- ------------------------------------------------------------------------
 \echo "*** colleges with highest enrollment ***"
 
