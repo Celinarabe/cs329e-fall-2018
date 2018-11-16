@@ -1,6 +1,8 @@
 -- --------------
 -- Subqueries.sql
 -- --------------
+-- https://www.postgresql.org/docs/8.1/functions-subquery.html
+-----------------
 
 \c test;
 
