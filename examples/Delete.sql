@@ -117,27 +117,12 @@ select *
 
 
 \echo "create temporary table first"
-/*
 create temporary table T as
     select sID
         from Apply
         group by sID
         having count(distinct major) > 2;
-select count(*)
-    from T;
-select *
-    from T;
-select count(*)
-    from Apply
-    where sID in
-        (select *
-            from T);
-select *
-    from Apply
-    where sID in
-        (select *
-            from T);
-*/
+		
 select count(*)
     from Apply;
 
