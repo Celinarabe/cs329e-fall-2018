@@ -151,8 +151,15 @@ select sName as csName
 
 -- ------------------------------------------------------------------------
 \echo "*** set difference: ID of students who did not apply anywhere ***"
-\echo "MySQL does not support except (minus)"
 
+\echo "using Except"
+
+select sID
+    from Student
+    except
+        (select sID
+            from Apply);
+			
 \echo "using a subquery, with not in"
 
 select sID
