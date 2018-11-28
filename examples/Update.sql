@@ -2,7 +2,7 @@
 -- Update.sql
 -- ----------
 
-\c test
+\c test;
 
 -- ------------------------------------------------------------------------
 SET client_min_messages=warning;
@@ -210,7 +210,7 @@ update Apply
         sID in
             (select *
                 from T);
-\echo "<---------------------"
+				
 select count(*)
     from Student
     inner join Apply using (sID)
