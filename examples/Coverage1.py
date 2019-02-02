@@ -28,11 +28,11 @@ if __name__ == "__main__" :
     main()
 
 """ #pragma: no cover
-% coverage-3.5 help
-Coverage.py, version 4.3.1 with C extension
+% coverage help
+Coverage.py, version 4.5.2 with C extension
 Measure, collect, and report on code coverage in Python programs.
 
-usage: coverage-3.5 <command> [options] [args]
+usage: coverage <command> [options] [args]
 
 Commands:
     annotate    Annotate source files with execution information.
@@ -44,13 +44,13 @@ Commands:
     run         Run a Python program and measure code execution.
     xml         Create an XML report of coverage results.
 
-Use "coverage-3.5 help <command>" for detailed help on any command.
+Use "coverage help <command>" for detailed help on any command.
 For full documentation, see https://coverage.readthedocs.io
 
 
 
-% coverage-3.5 help run
-Usage: coverage-3.5 run [options] <pyfile> [program options]
+% coverage help run
+Usage: coverage run [options] <pyfile> [program options]
 
 Run a Python program, measuring code execution.
 
@@ -82,13 +82,14 @@ Options:
                         you get seemingly impossible results!
   --debug=OPTS          Debug options, separated by commas
   -h, --help            Get help on this command.
-  --rcfile=RCFILE       Specify configuration file.  Defaults to '.coveragerc'
+  --rcfile=RCFILE       Specify configuration file.  By default '.coveragerc',
+                        'setup.cfg' and 'tox.ini' are tried.coveragerc'
 
 
 
   
- % coverage-3.5 help report
-Usage: coverage-3.5 report [options] [modules]
+ % coverage help report
+Usage: coverage report [options] [modules]
 
 Report coverage statistics on modules.
 
@@ -107,11 +108,12 @@ Options:
   --skip-covered        Skip files with 100% coverage.
   --debug=OPTS          Debug options, separated by commas
   -h, --help            Get help on this command.
-  --rcfile=RCFILE       Specify configuration file.  Defaults to '.coveragerc'
+  --rcfile=RCFILE       Specify configuration file.  By default '.coveragerc',
+                        'setup.cfg' and 'tox.ini' are tried.
 
 
 
-% coverage-3.5 run --branch Coverage1.py
+% coverage run --branch Coverage1.py
 .
 ----------------------------------------------------------------------
 Ran 1 test in 0.000s
@@ -120,8 +122,7 @@ OK
 
 
 
-% coverage-3.5 report -m
+% coverage report -m
 Name           Stmts   Miss Branch BrPart  Cover   Missing
 ----------------------------------------------------------
 Coverage1.py      16      4      4      1    65%   15-19, 14->15
-"""

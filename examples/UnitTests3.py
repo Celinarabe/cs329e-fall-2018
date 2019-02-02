@@ -4,8 +4,8 @@
 # UnitTests3.py
 # -------------
 
-# https://docs.python.org/3.5/library/unittest.html
-# https://docs.python.org/3.5/library/unittest.html#assert-methods
+# https://docs.python.org/3.6/library/unittest.html
+# https://docs.python.org/3.6/library/unittest.html#assert-methods
 
 from unittest import main, TestCase
 
@@ -41,4 +41,5 @@ if __name__ == "__main__" :
 Ran 3 tests in 0.000s
 
 OK
+
 """
